@@ -25,4 +25,7 @@ node server.js
 ```
 
 ## Usage
+Open below URL in browser
  [http://localhost:3000/](http://localhost:3000/).
+
+ Open the file generated in logs folder i.e, ```log.txt``` and update it and it should be render on browser in real time.
