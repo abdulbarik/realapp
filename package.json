@@ -1,0 +1,22 @@
+{
+  "name": "realapp",
+  "version": "1.0.0",
+  "description": "A client server communication via socket.io to read the log file",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulbarik/realapp.git"
+  },
+  "author": "Abdul Barik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulbarik/realapp/issues"
+  },
+  "homepage": "https://github.com/abdulbarik/realapp#readme",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  }
+}

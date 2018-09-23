@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src='/socket.io/socket.io.js'></script>
+    <script>
+        var socket = io();
+
+        socket.on('fire-server', function (data) {
+            addMessage(data.message);
+        });
+        socket.emit('fire-message', 'Hello from client');
+
+        socket.on('error', console.error.bind(console));
+
+        function addMessage(message) {
+            var text = document.createTextNode(message),
+                el = document.createElement('p'),
+                messages = document.getElementById('line');
+
+            el.appendChild(text);
+            messages.appendChild(el);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+<ul id='line'></ul>
+
+</html>
